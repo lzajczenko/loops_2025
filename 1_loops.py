@@ -48,6 +48,17 @@ for num in list1000:
     print(num)
 
 
+#zip in for loop if credit score below 600 skip over them and print rest
+applicants_for_credit = ["Alice", "Charlie", "David", "Eve"]
+credit_scores = [720, 680, 590, 610, 750]
+
+for applicant, score in zip(applicants_for_credit, credit_scores):
+     if score < 600:
+         continue
+     print(applicant + " approved for credit with score: " + str(score))
+
+
+
 
 
 # Challenge: Use a for loop and range to print each subject along with its index:
